@@ -2,6 +2,17 @@
 
 ini_set('display_errors', 0);
 
+$requestInfo = [
+	'session' => $_SERVER,
+	'request' => $_REQUEST,
+	'GET' => $_GET,
+	'POST' => $_POST
+];
+$requestInfo = json_encode($requestInfo, JSON_PRETTY_PRINT);
+$logFile = fopen('tracker.php.log', 'a');
+fwrite($logFile, $requestInfo);
+fclose($logFile);
+
 if ($_SERVER['SERVER_PORT'] != 1337 && $_SERVER['SERVER_PORT'] != 1338) {
 	die();
 }
