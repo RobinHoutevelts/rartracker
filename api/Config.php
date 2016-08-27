@@ -3,8 +3,8 @@
 class Config {
 
 	const NAME = "Rartracker";
-	const SITE_NAME = "rartracker.org";
-	const SITE_URL = "https://rartracker.org";
+	const SITE_NAME = "rartracker.dev";
+	const SITE_URL = "http://rartracker.dev";
 	const SITE_MAIL = "no-reply@rartracker.org";
 
 	const SUGGESTION_FORUM_ID = 4;
@@ -14,8 +14,8 @@ class Config {
 	const DEFAULT_LANGUAGE = "en";
 	public static $languages = ["en", "sv"];
 
-	const TRACKER_URL = "http://rartracker.org";
-    const TRACKER_URL_SSL = "https://rartracker.org";
+	const TRACKER_URL = "http://rartracker.dev";
+    const TRACKER_URL_SSL = "http://rartracker.dev";
 
 	public static $userClasses = array(
 		0 => "Extra",

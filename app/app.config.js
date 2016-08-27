@@ -3,7 +3,7 @@
 
 	var configs = {
 		STATUS_CHECK_TIMER_LIMIT_MINUTES: 60 * 24,
-		SITE_URL: 'http://127.0.0.1',
+		SITE_URL: 'http://rartracker.dev',
 		API_BASE_URL: '/api/v1/',
 		SUGGESTIONS_FORUM_ID: 4,
 		DEFAULT_LANGUAGE: 'en',
