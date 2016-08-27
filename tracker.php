@@ -67,9 +67,7 @@ $setting['download_multiplier']     = 1;
 $setting['passkey_length']          = 32;
 
 function debuglog($str) {
-	if ($setting['log_debug']) {
-		file_put_contents('trackerdebug.txt', date('[H:i:s]') . ' ' . $str . ' URL: ' . $_SERVER['REQUEST_URI'] . "\n", FILE_APPEND);
-	}
+	file_put_contents('trackerdebug.txt', date('[H:i:s]') . ' ' . $str . ' URL: ' . $_SERVER['REQUEST_URI'] . "\n", FILE_APPEND);
 }
 
 if ($setting['time_me'] || $setting['log_debug']) {
