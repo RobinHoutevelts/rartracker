@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors', 0);
+
 if ($_SERVER['SERVER_PORT'] != 1337 && $_SERVER['SERVER_PORT'] != 1338) {
 	die();
 }

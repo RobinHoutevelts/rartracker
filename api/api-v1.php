@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors', 0);
+
 /* Prevent IE Cache */
 header('Expires: Sun, 01 Jan 2014 00:00:00 GMT');
 header('Cache-Control: no-store, no-cache, must-revalidate');
