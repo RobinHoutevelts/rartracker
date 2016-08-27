@@ -13,7 +13,9 @@ $logFile = fopen('tracker.php.log', 'a');
 fwrite($logFile, $requestInfo);
 fclose($logFile);
 
-if ($_SERVER['SERVER_PORT'] != 1337 && $_SERVER['SERVER_PORT'] != 1338) {
+$allowed_ports = [80, 1337, 1338];
+
+if (!in_array($_SERVER['SERVER_PORT'], $allowed_ports)) {
 	die();
 }
 
