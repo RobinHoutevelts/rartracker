@@ -62,7 +62,7 @@ gulp.task('dist-js', ['lint'], function() {
 	return gulp.src(filePaths.JS_FILES)
 		.pipe(babel({ presets: ['es2015'] }))
 		.pipe(ngAnnotate())
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(concat(filePaths.OUTPUT_JS_FILE))
 		.pipe(gulp.dest(filePaths.OUTPUT_DEST));
 });
